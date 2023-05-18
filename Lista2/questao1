@@ -1,0 +1,17 @@
+clc;
+clear;
+
+P = 20 * 1000;
+Fa = (1.25 * P) / 2;
+da = 10:1:20;
+A = (%pi * (da^2))/4;
+Ta = Fa./A;
+Fs = 2.5;
+Tu = Ta * Fs;
+
+plot(da,Tu,"r");
+title("Tensão utilma x Diâmetros")
+xgrid(1);
+ylabel("Tensão Ultima, (MPa)");
+xlabel("Diâmetro (mm)")
+legend('diâmetros');
