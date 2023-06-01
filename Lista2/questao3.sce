@@ -24,4 +24,5 @@ F = [Pa, Pb, Pd];
 
 Fmax = min(F);
 
+disp(F);
 disp(Fmax);
